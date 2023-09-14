@@ -1,0 +1,10 @@
+/shelf/
+
+.idea/
+symbol-counter.iml
+
+**/META-INF/
+
+**/.mvn/
+**/mvnw
+**/mvnw.cmd
