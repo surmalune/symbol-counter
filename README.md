@@ -1,11 +1,11 @@
-#symbol-counter
+# symbol-counter
 
-##How to run the app using JAR file
+## How to run the app using JAR file
 
 If you have JDK on the PC, you can run it with that single command:<br>
 `java -jar target/symbol-counter-0.0.1-SNAPSHOT.jar`
 
-##How to run the app using Docker
+## How to run the app using Docker
 
 This method require Docker.<br>
 
@@ -14,7 +14,7 @@ This method require Docker.<br>
 2. Run a Docker container:<br>
 `docker run -dp 8080:8080 symbol-counter`
 
-##How to use the app
+## How to use the app
 1. After you run the program (see the instructions above), you will be able to access it via http://localhost:8080/count <br><br>
 2. To send a string in which characters need to be counted, you need to use parameters 
 (the parameter is called 'text'). Example:<br><br>
