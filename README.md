@@ -2,7 +2,7 @@
 
 ## How to run the app using JAR file
 
-If you have JDK on the PC, you can run it with that single command:<br>
+If you have JRE on the PC, you can run it with that single command:<br>
 `java -jar target/symbol-counter-0.0.1-SNAPSHOT.jar`
 
 ## How to run the app using Docker
@@ -21,7 +21,7 @@ This method require Docker.<br>
 `http://localhost:8080/count?text=aaaabccc`
 <br><br>The program accepts only Latin letters and string's length should be less than 1000001, 
 otherwise the input data is considered invalid, it will return a message with an error description. 
-If the string is missing, it will return an empty character table.<br><br>
+If the string is missing, it will return an empty character-count table.<br><br>
 3. In the case of valid input data, 
 the results will be a JSON containing a table of the form 
 _"symbol": count_. In descending order of counts. Example:<br><br>
