@@ -83,7 +83,7 @@ class SymbolCounterControllerTest {
 
     @Test
     void getSymbolCount_longString_throwsConstraintViolationException() throws Exception {
-        String text = "a".repeat(1000001);
+        String text = "a".repeat(151);
         when(symbolCounterService.getSymbolCount(anyString())).thenThrow(new ConstraintViolationException(null));
 
         MvcResult result = mvc.perform(MockMvcRequestBuilders.get("/count")

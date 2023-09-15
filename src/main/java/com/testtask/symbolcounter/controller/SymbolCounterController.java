@@ -20,7 +20,7 @@ public class SymbolCounterController {
 
     @GetMapping("/count")
     public ResponseEntity<SymbolCounterResponse> getSymbolCount(@RequestParam("text")
-                                                                @Length(max = 1000000, message = "String's length should be less than 1000000")
+                                                                @Length(max = 150, message = "String's length should be less than 150")
                                                                 @Pattern(regexp = "^[a-zA-Z]*$", message = "String contains non-latin characters")
                                                                 String text) {
         SymbolCounterResponse response = symbolCounterService.getSymbolCount(text);
